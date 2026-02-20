@@ -5,4 +5,4 @@ def student_list(request):
     students=Student.objects.all()
     print(students)
 
-    return render(request,"students.html",{"students.html":students})
+    return render(request,"students.html",{"students":students})
