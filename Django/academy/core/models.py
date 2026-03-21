@@ -14,3 +14,4 @@ class Student(models.Model):
 
     def __str__(self):
         return f"Name: {self.name}\nAge: {self.age}\nCourse: {self.course}"
+ 
