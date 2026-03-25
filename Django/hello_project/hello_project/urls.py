@@ -1,7 +1,11 @@
+
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path
+from django.http import HttpResponse
+
+def fun(request):
+    return HttpResponse("Dhruv is learning backend with Django")
 
 urlpatterns = [
-    path("admin/",admin.site.urls),
-    path("students/",include("students.urls")),
+    path('hello/',fun),
 ]
