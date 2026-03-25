@@ -1,10 +1,6 @@
-
 from django.contrib import admin
 from django.urls import path
-from django.http import HttpResponse
-
-def fun(request):
-    return HttpResponse("Dhruv is learning backend with Django")
+from .views import fun
 
 urlpatterns = [
     path('hello/',fun),
