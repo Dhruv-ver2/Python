@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Student List</h1>
+    <ul>
+        {% for s in all_students %}
+            <li>{{ s.name }} — Age: {{ s.age }}</li>
+        {% empty %}
+            <li>No students found in the database.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-from .views import fun
+from .views import student_list
 
 urlpatterns = [
-    path('hello/',fun),
+    path('students/',student_list),
+
 ]
