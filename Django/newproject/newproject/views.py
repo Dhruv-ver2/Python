@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def fun(request):
-    return HttpResponse("New Project has been created")
+    return render(request,"sample.html")
