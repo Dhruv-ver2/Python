@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>My Django Page</title>
-</head>
 <body>
-    <h1>Success!</h1>
-    <p>This template is located in the outer project folder.</p>
+    <h1>{{ message }}</h1>
+    <nav>
+        <ul>
+            <li><a href="/app1/profile/">View my Profile</a></li>
+            <li><a href="/app1/contact/">Contact Me</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
