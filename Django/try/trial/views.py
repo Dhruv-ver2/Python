@@ -9,9 +9,3 @@ def trial(request):
         "topics": ["Urls", "Views", "Templates","Dynamic Data"]
     }
     return render(request, 'index.html', context)
-
-def new_fun(request, name): # Added 'name' as a parameter
-    context = {
-        "user_name": name,  # Now it uses the variable from the URL!
-    }
-    return render(request, 'new.html', context)

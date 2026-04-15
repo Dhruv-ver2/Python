@@ -16,10 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import new_fun, trial
+from .views import trial
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/',trial),
-    path('hello/<str:name>/',new_fun)
 ]
